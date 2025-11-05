@@ -15,6 +15,17 @@ public class Banana extends Actor
     public void act()
     {
         // Add your action code here.
-        move(-2);
+        move(-3);
+        
+        if (getX() <= 0)
+        {
+            resetBanana();
+        }
+    }
+    
+    public void resetBanana()
+    {
+        int x = Greenfoot.ran
+        setLocation(600, 100);
     }
 }
